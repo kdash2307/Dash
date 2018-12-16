@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="VIT virtual Lab">
+	  <meta name="keywords" content="VIT SELECT virtual lab">
+  	
+    <title>SELECT VIRTUAL LAB | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+  </head>
+  <body>
+    <header>
+      <!--------------------------------------------INTRODUCTION------------------------------>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">VIT</span>(Vellore Institute of Technology)</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">Virtual LAB</a></li>
+            <li><a href="services.html">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<body>
+  <!----------------Navigation Bar for contact us and scrolling Pages---------------------->
+
+
+
+
+  <section>
+
+  </section>
+
+
+  <!--------------------------------Main Content for the page-->
+  <section>
+<h3 id="heading">Real and Reactive Power Flow of Transmission Line</h3>
+<br>
+
+<!----------------------------FORM FOR EXPERIMENT-->
+<form method="POST">
+<h4>
+  Aim:&nbspTo analyze the real and reactive power flows of the transmission line by using series and shunt compensation.
+</h4>    
+<button onclick="showImage('PS3.jpg')">Show Question</button>
+
+<script type="text/javascript">
+  function showImage(imgName) {
+    var curImage = document.getElementById('currentImg');
+   	
+    
+    curImage.src = imgName;
+    
+    $('button').hide();
+  
+  }
+  
+</script>
+
+<div id="rightDisplay">
+  <img src=""  id="currentImg"  />
+</div>
+
+<!----------text field for software and theory-->
+<h4>Software Required:
+
+<input type="text" placeholder="Please Enter the required software field" required>
+</h4>
+
+<h4>Theory:</h4>
+<textarea rows="10" cols="100%" placeholder="Please enter the theory part here" required></textarea>
+
+
+<!----------------formulae,procedure,manual calculation and screenshot area-->
+<h4>Formulae:
+                 <em> (Upload the Screenshot)</em></h4>
+            <input type='file' onchange="readURL(this);" />
+           
+            
+            <h4>Procedure:</h4>
+            <textarea rows="10" cols="100%" placeholder="Please enter the procedure part here" required></textarea>
+            
+            
+            
+            <h4>Manual Calculation:
+                <em> (Upload the Screenshot)</em></h4>
+           <input type='file' onchange="readURL1(this);" />
+           
+           <h4>Program Output:
+              <em> (Upload the Screenshot)</em></h4>
+         <input type='file' onchange="readURL2(this);" />
+
+        
+        
+         <h4>Result:</h4>
+         <textarea rows="3" cols="100%" placeholder="Please enter the result part here" required></textarea>
+<br>
+         <input type="submit" value="Submit">
+
+
+
+</form>
+
+
+<footer>
+  <p>VIT, Vellore &copy; 2018</p>
+</footer>
+
+</body>
